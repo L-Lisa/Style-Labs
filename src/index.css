@@ -72,24 +72,24 @@ button {
   width: 200px;
   height: 200px;
   position: relative;
-
 }
+
 .component{
-  position: absolute;
+  position: relative;
   width: 200px;
   height: 200px;
   display: flex;
   margin: 5px;
   flex-direction: column;
-  border-radius: 4%;
   box-shadow: rgb(211, 208, 208) 1px 1px 3px 1px;
   margin: 20px;
   overflow: hidden;
   transition: all 1s ease;
+  border-radius: 4%;
 }
 
 .component-header {
-  
+  position: absolute;
   width: 200px;
   height: 100px;
   background-color: rgb(87, 224, 158);
@@ -103,25 +103,25 @@ button {
 }
 
 .component-emoji {
-  
-  width: 200px;
-  height: 100px;
-  background-color: rgb(135, 241, 195);
-  transition: 0.4s;
+  position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 120px;
+  background-color: rgb(135, 241, 195);
+  transition: 0.5s;
   font-size: 2em;
   bottom: 0;
 }
 .component-header:hover {
-  transition: 0.1s;
+  transition: 0.5s;
   height: 200px;
   z-index: 1;
 }
 
 .component-emoji:hover {
-  transition: 0.1s;
+  transition: 0.5s;
   height: 200px;
   z-index: 10;
 }
@@ -131,9 +131,12 @@ button {
 }
 
 .component-emoji:hover + .component-header{
-  height:0;
-  z-index: 0;
-  }
+  font-size: 0px;
+  height: 0;
+}
+  .component-emoji:hover .component-header-txt{
+   font-size: 0px;
+    }
   
 
 .btnTxt {
@@ -143,4 +146,12 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.component-header-txt {
+  font: size 3rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.transform { 
+transition: all 1s ease;
 }

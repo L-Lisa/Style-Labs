@@ -28,11 +28,11 @@ const onClick = () => {
         ): (
         <section className="component-wrapper">
             <div className="component">
-                <section style={{ backgroundColor: props.secondarycolor }} className="component-header">
-                   <h1> {props.title}</h1>
+                <section style={{ backgroundColor: props.secondarycolor }} className="component-header transform">
+                   <h1 className="component-header-txt"> {props.title}</h1>
                 </section>
-                <div style={{ backgroundColor: props.primarycolor }} className="component-emoji">
-                    <span>{props.emoji}</span>
+                <div style={{ backgroundColor: props.primarycolor }} className="component-emoji transform">
+                    <span className="emoji-fig" >{props.emoji}</span>
                 </div>
             </div>
         </section>
