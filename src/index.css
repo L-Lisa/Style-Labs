@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +16,131 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main-card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  background: rgb(192, 191, 191);
+  border-radius: 4%;
+  box-shadow: rgb(211, 208, 208) 1px 1px 3px 1px;
+  padding: 0 0 4px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: khaki;
+  height: 35%;
+  align-items: center;
+
+}
+
+.title-txt{
+font-size: 2em;
+padding: 3px;
+}
+.emoji {
+  font-size: 2em;
+}
+.card-body{
+  font-style: italic;
+  font-family: Helvetica Neue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+button {
+  width: 80%;
+  text-transform: capitalize;
+  background: black;
+  font-size: 1em;
+  color: white;
+  margin-top: 50px;
+  text-transform: capitalize;
+  border-radius: 4%;
+  box-shadow: rgb(211, 208, 208) 1px 1px 3px 1px
+}
+
+
+/* COMPONENT */
+.component-wrapper{
+  width: 200px;
+  height: 200px;
+  position: relative;
+
+}
+.component{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: 5px;
+  flex-direction: column;
+  border-radius: 4%;
+  box-shadow: rgb(211, 208, 208) 1px 1px 3px 1px;
+  margin: 20px;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.component-header {
+  
+  width: 200px;
+  height: 100px;
+  background-color: rgb(87, 224, 158);
+  transition: 0.4s;
+  font-size: 2em;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.component-emoji {
+  
+  width: 200px;
+  height: 100px;
+  background-color: rgb(135, 241, 195);
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  bottom: 0;
+}
+.component-header:hover {
+  transition: 0.1s;
+  height: 200px;
+  z-index: 1;
+}
+
+.component-emoji:hover {
+  transition: 0.1s;
+  height: 200px;
+  z-index: 10;
+}
+.component-header:hover + .component-emoji{
+  height:0;
+  z-index: 0;
+}
+
+.component-emoji:hover + .component-header{
+  height:0;
+  z-index: 0;
+  }
+  
+
+.btnTxt {
+  text-transform: uppercase;
+}
+.cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
