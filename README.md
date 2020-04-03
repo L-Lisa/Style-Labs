@@ -1,19 +1,10 @@
-# Technigo React Starter App
+# Playing with style
+This was a short school assignment, goal was to produce a few reusable card components.  
 
-This app has been generated using `create-react-app`, then cleaned up a little so we have a project with just the elements we need to get started.
+## The problem
+I used React Hooks - useState and a whole lot of Css styling. 
+The problem was as often the functionality took most of the time, with more time I would have like to apply this project to a real world project. 
 
-Add components in the `src` folder and use them in `src/app.js` to get started.
+## View it live
+https://suspicious-minsky-66a537.netlify.com
 
-## Usage
-
-1. On GitHub, click the 'use this template' button to create a new repo on your account
-1. Clone the new repo to your computer
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
-
-Alternatively, if you don't want a new git repo on your account;
-
-1. Download & extract the [latest release](https://github.com/Technigo/react-starter/releases/latest) from GitHub
-1. Open the directory in the terminal: `cd /path/to/react-starter`
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
